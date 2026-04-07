@@ -33,13 +33,13 @@ FeatureStatusBasic peer connection✅ DoneVideo/Audio stream🔄 In ProgressData
 
 🏃 How to Run
 bash# Clone the repo
-git clone https://github.com/your-username/your-repo-name.git
+git clone (https://github.com/kalash-ai/webRTC)
 
 # Navigate into the project
-cd your-repo-name
+cd webRTC
 
 # Install dependencies (if any)
 npm install
 
 # Start the server
-node server.js
+npm run dev
