@@ -1,7 +1,6 @@
 📡 WebRTC Study Project
 
 ⚠️ This is a learning/study project. Built to understand how WebRTC works from the ground up. More updates coming as I explore deeper concepts.
-⚠️ This is a learning/study project. Built to understand how WebRTC works from the ground up. More updates coming as I explore deeper concepts.
 
 
 🎯 Purpose
