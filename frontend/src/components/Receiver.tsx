@@ -8,10 +8,10 @@ const videoRef =useRef<HTMLVideoElement>(null);
             socket.send(JSON.stringify({ type: 'receiver' }))
         }
 
+        let pc: RTCPeerConnection | null = null;
         socket.onmessage = async (event) => {
 
             const message = JSON.parse(event.data);
-            let pc: RTCPeerConnection | null = null;
 
             if (message.type === 'createOffer') {
                 // create offer
@@ -26,7 +26,10 @@ const videoRef =useRef<HTMLVideoElement>(null);
 
 
                 pc.ontrack = (event) => {
+                     
             const video = document.createElement('video');
+             video.autoplay = true;      // ← add this
+    video.muted = true;
             document.body.appendChild(video);
             video.srcObject = new MediaStream([event.track]);
             video.play();
